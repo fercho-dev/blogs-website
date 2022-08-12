@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/8302e80fad.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/tablet-horizontal.css" media="screen and (max-width: 1024px)">
+  <link rel="stylesheet" href="./css/tablet-vertical.css" media="screen and (max-width: 850px)">
+  <link rel="stylesheet" href="./css/phone.css" media="screen and (max-width: 440px)">
+  <link rel="icon" href="./assets/drawn-avatar.png" type="image/png">
+  <meta name="description" content="Aquí encuentras blogs sobre cripto, blockchain, web3 y desarrollo web">
+  <meta name="robots" content="index,follow">
+  <title>ferchoeth blogs</title>
+</head>
+<body>
+  <main class="main">
+    <section class="main__section" id="greeting-social">
+      <article class="main__article" id="greeting">
+        <figure>
+          <img src="./assets/drawn-avatar.png" alt="">
+          <p>
+            ¡Hola! Aquí puedes aprender sobre criptomonedas,
+            desarrollo web y web3.
+          </p>
+        </figure>
+      </article>
+      <article class="main__article" id="social">
+        <p>¡Sigueme en redes!</p>
+        <div>
+          <a href="https://twitter.com/ferchoeth" target="_blank" id="twitterIcon"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/ferchoeth/" target="_blank" id="linkedinIcon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/ferchoeth" target="_blank" id="githubIcon"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </article>
+    </section>
+    <section class="main__section" id="themes-blogposts">
+      <article class="main__article" id="cripto-blogposts">
+        <button data-modal-target="#modal" href="">
+          <p>⛓ Blockchain y cripto</p>
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </article>
+      <article class="main__article" id="web-dev-blogposts">
+        <button data-modal-target="#modal" href="">
+          <p>🖥 Desarrollo web</p>
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </article>
+      <article class="main__article" id="web3-blogposts">
+        <button data-modal-target="#modal" href="">
+          <p>🌐 Web3</p>
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </article>
+      <article class="main__article" id="random-blogposts">
+        <button data-modal-target="#modal" href="">
+          <p>🧠 Random thoughts</p>
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </article>
+    </section>
+    <section class="main__section" id="social-mobile">
+      <p>¡Sigueme en redes!</p>
+      <div>
+        <a href="https://twitter.com/ferchoeth" target="_blank" id="twitterIcon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ferchoeth/" target="_blank" id="linkedinIcon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ferchoeth" target="_blank" id="githubIcon"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Hecho con 💚 y un poco de JavaScript</p>
+    <section class="acknowledgment">
+      <p>Ilustration from <a href="https://www.openpeeps.com/" target="_blank">Open Peeps</a></p>
+    </section>
+  </footer>
+
+  <section class="modal" id="modal">
+    <div class="modal-header">
+      <h2 class="modal-title">🙀 Ups!</h2>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <p class="modal-body">Aún no hay nada aquí... vuelve pronto.</p>
+  </section>
+  <div id="overlay"></div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
