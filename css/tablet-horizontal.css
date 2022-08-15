@@ -41,6 +41,10 @@
   padding: 0 5%;
 }
 
+#themes-blogposts article {
+  width: 360px;
+}
+
 .footer {
     font-size: 1.0rem;
 }

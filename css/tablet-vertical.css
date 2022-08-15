@@ -46,6 +46,10 @@
     grid-template-columns: 1fr 1fr;
     padding: 0 2.5%;
 }
+
+#themes-blogposts article {
+    width: 340px;
+}
   
 #themes-blogposts a {
     font-size: 2.0rem;
