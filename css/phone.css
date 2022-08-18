@@ -1,93 +1,235 @@
+@import "./base.css";
+
 /* general */
 
 .main {
-    width: 100%;
-    margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 0;
 }
-  
+
 /* greeting and social */
 
 #greeting-social {
-    margin-top: 25px;
-    padding: 0 5%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  margin-top: 25px;
+  padding: 0 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #greeting-social article {
-    width: 315px;
-    height: 100%;
+  width: 315px;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+#greeting {
+  background-color: var(--greetingColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#greeting figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #greeting img {
-    width: 80px;
-    height: 80px;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
 }
 
 #greeting p {
-    font-size: 1.6rem;
-    width: 100%;
+  font-size: 1.6rem;
+  width: 100%;
 }
 
 #social {
-    display: none;
+  display: none;
+}
+
+.fa-twitter {
+  color: #1d9bf0;
+}
+
+.fa-linkedin {
+  color: #0866c2;
+}
+
+.fa-github {
+  color: #000000;
 }
 
 /* themes blogpost */
 
 #themes-blogposts {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#themes-blogposts article {
-    width: 310px;
-    height: 100px;
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4rem;
 }
 
-#themes-blogposts a {
-    font-size: 1.8rem;
+.newsletter {
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-bottom: 1rem;
+  width: 28rem;
+  height: 26rem;
 }
 
-#themes-blogposts a:hover {
-    font-size: 2.0rem;
+#substack-embed iframe {
+  width: 28rem;
+  height: 26rem;
+  border-radius: 20px;
 }
 
-#themes-blogposts button {
-    font-size: 1.8rem;
+#revue-embed {
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
-#themes-blogposts button:hover {
-    font-size: 2.0rem;
+#revue-embed h2 {
+  color: var(--textColor);
+  font-family: var(--fontStyleAlt);
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-top: 4.2rem;
+  margin-bottom: 0.6rem;
+}
+
+#revue-embed p {
+  text-align: center;
+  padding: 0 5%;
+  color: var(--gray);
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: var(--fontStyleAlt);
+  margin-bottom: 3.2rem;
+  opacity: 90%;
+}
+
+#revue-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.revue-form-group {
+  height: 5.2rem;
+  width: 26rem;
+  border: 1px solid var(--btnColor);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.revue-form-group label {
+  display: none;
+}
+
+#member_email {
+  display: inline-block;
+  height: 100%;
+  width: 9.6rem;
+  border: none;
+  width: 80%;
+  font-size: 1.6rem;
+  color: var(--gray);
+  border-radius: 5px;
+  outline: none;
+  padding-left: 1rem;
+}
+
+#member_submit {
+  display: inline-block;
+  height: 100%;
+  width: 12rem;
+  border: none;
+  background-color: var(--btnColor);
+  color: var(--white);
+  font-size: 1.6rem;
+  border-radius: 0 5px 5px 0;
+}
+
+#member_submit:hover {
+  cursor: pointer;
+}
+
+.revue-form-footer {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 0.7rem;
+}
+
+.newsletter-link {
+  text-decoration: none;
+  color: var(--textColor);
+  font-family: var(--fontStyle);
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
+  opacity: 80%;
+}
+
+.newsletter-link:hover {
+  font-size: 1.9rem;
+  color: var(--btnColor);
+}
+
+.newsletter-link i {
+  margin-left: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .footer {
-    position: static;
-    font-size: 0.8rem;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: static;
+  font-size: 0.8rem;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-  
+
 .acknowledgment {
-    position: static;
-    font-size: 0.6rem;
+  position: static;
+  font-size: 0.6rem;
 }
 
 #social-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #social-mobile p {
-    margin: 10px;
-    font-size: 1.4rem;
+  margin: 10px;
+  font-size: 1.4rem;
 }
 
 #social-mobile a {
-    font-size: 2.0rem;
-    margin: 10px 10px;
+  font-size: 2.0rem;
+  margin: 10px 10px;
+}
+
+#social-mobile a:hover {
+  font-size: 2.2rem;
 }

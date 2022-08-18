@@ -1,0 +1,13 @@
+.main {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#greeting-social #greeting {
+  width: 80%;
+}
+
+#greeting img {
+  width: 100px;
+  height: 100px;
+}
