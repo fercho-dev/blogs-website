@@ -78,16 +78,11 @@
 
 .footer {
     width: 100vw;
-    position: fixed;
-    bottom: 12px;
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
   }
   
   .acknowledgment {
-    position: fixed;
-    bottom: 12px;
-    right: 10px;
     font-size: 1.0rem;
   }
