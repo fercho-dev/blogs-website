@@ -188,6 +188,10 @@
   display: block;
   text-align: center;
   opacity: 80%;
+  background-color: var(--soft-orange);
+  border-radius: 10px;
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.16);
 }
 
 .newsletter-link:hover {
