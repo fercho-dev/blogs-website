@@ -107,12 +107,16 @@
   position: relative;
 }
 
+#revue-embed > a {
+    text-decoration: none;
+    margin-top: 4.2rem;
+}
+
 #revue-embed h2 {
   color: var(--textColor);
   font-family: var(--fontStyleAlt);
   font-weight: 500;
   font-size: 2.4rem;
-  margin-top: 4.2rem;
   margin-bottom: 0.6rem;
 }
 
@@ -120,10 +124,10 @@
   text-align: center;
   padding: 0 5%;
   color: var(--gray);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 300;
   font-family: var(--fontStyleAlt);
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
   opacity: 90%;
 }
 
